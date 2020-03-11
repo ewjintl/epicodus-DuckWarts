@@ -1,0 +1,36 @@
+body {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(150,227,39,1) 49%, rgba(196,0,255,1) 100%);
+  font-family: monospace;
+}
+
+.container {
+  background: rgb(255, 124, 2);
+  padding: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border:25px;
+  border-style: inset;
+}
+
+h1 {
+  font-weight: 300;
+  text-align: center;
+}
+
+h2 {
+  text-align: center; 
+}
+
+card {
+  background: rgb(255, 124, 2);
+  padding: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border:25px;
+  border-style: inset;
+}
