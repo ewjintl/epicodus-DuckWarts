@@ -24,7 +24,7 @@ h2 {
   text-align: center; 
 }
 
-card {
+.card {
   background: rgb(255, 124, 2);
   padding: 25px;
   margin-left: 25px;
@@ -33,4 +33,8 @@ card {
   margin-bottom: 25px;
   border:25px;
   border-style: inset;
+}
+
+#introCard, #branchOne, #branchTwo, #branchThree, #branchFour {
+  display: none;
 }
