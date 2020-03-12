@@ -10,7 +10,7 @@
 <body>
   <div class="container">
       <div class="card">
-          <h1 class="card-title"  >DuckWarts</h1>
+          <h1 class="card-title"  >DuckWarts: "The Village Murders"</h1>
           <p><strong><em>A chose your own adventure game!</em></strong></p>
           <p><strong>Instructions:</strong> Read each "card" below, and choose how your character will respond from the drop down choices at the bottom of the text.</p>
       </div>
@@ -26,7 +26,7 @@
           <p>A child named <span class="charName"></span> finds themself walking home towards their village hamlet through the forest late one night. It is a cold night, and notably a full moon. <span class="charName"></span> shudders when they hear a gutteral beastlike howl pierce the air. A gust of wind rutsles the leaves of the nearby trees, but a ways off the sound of snapping braches can be heard.   </p>
         <form id="intro">
             <label for="">What will <span class="charName"></span> do?</label>
-            <select class="form-control form-control-lg" name="" id="decisionOne">
+            <select class="form-control form-control-lg" name="" id="decisionIntro">
               <option value="A">Choose one:</option> 
               <option value="B">Become frightened and run home as fast as possible!</option>
               <option value="C">Play off the noises as nothing, and continue walking 
@@ -36,21 +36,27 @@
             <button type="Submit" class="btn-success">Submit</button>
         </form>
       </div>
+
       <div class="card" id="branchOne">
-          <p>As <span class="charName"></span>turns around</p>
-        <form id="branchThree">
-            <select class="form-control form-control-lg" name="" id="">
-              <option value="0">Choose one:</option> 
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              </select>
-              <button type="Submit" class="btn-success">Submit</button>
+          <p>As <span class="charName"></span> turns around, they see a huge silloutte rush towards them before they are vicously bitten on the neck and everything fades to balck as they lose consciousness. When <span class="charName"></span> awakes they realize they've awoken under the village bridge, they're clothes in tatters and covered in blood.</p>
+        <form id="BranchOneDecision">
+            <label for="">What will <span class="charName"></span> do?</label>
+            <select class="form-control form-control-lg" name="" id="decisionOne">
+              <option value="A">Choose one:</option> 
+              <option value="B">Decide to clean themselves up in the river, before returning home.</option>
+              <option value="C">Start screaming with panic!</option>
+              <option value="D">Realize that something terrible has happened and go back to where they were bitten.</option>
+            </select>
+            <button type="Submit" class="btn-success">Submit</button>
         </form>
       </div>
-      <div class="card" id="branchTwo">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum odio similique beatae, ipsa in voluptas vitae vel dolorum ducimus minima unde itaque ullam neque magni quae ipsum cupiditate, labore corporis.</p>
-        <form id="branchOne">
+
+      <div class="card" id="endingTwo">
+          <p>A local village person happens to pass by and sees <span class="charName"></span> covered in blood, and runs to alert the locally garrisoned solidiers. As the soldiers approach, a mob has encircled <span class="charName"></span> chanting, Burn the wolf! Burn the wolf!" The soilders have been looking all morning for the culprit behind last night's grisly murders, and upon seeing the child, one solider dashes forth enraged at the lose of his own family and strikes <span class="charName"></span>'s head from his shoulders.</p><br>
+          <h4><em>And so, <span class="charName"></span>'s tale ends ~~</em></h4>
+
+
+        <!-- <form id="branchOne">
             <select class="form-control form-control-lg" name="" id="">
               <option value="0">Choose one:</option> 
               <option value=""></option>
@@ -58,7 +64,7 @@
               <option value=""></option>
               </select>
               <button type="Submit" class="btn-success">Submit</button>
-        </form>
+        </form> -->
       </div>
       <div class="card" id="branchThree">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum odio similique beatae, ipsa in voluptas vitae vel dolorum ducimus minima unde itaque ullam neque magni quae ipsum cupiditate, labore corporis.</p>

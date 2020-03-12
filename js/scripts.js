@@ -10,11 +10,25 @@ $(document).ready(function() {
   $("form#intro").submit(function(event) {
     var decsionIntro = $("#decisionIntro").val();
     console.log(decsionIntro);
-    if (decisionOne === "B") {
+    if (decisionIntro === "B") {
       $("#branchFour").show();
     } else {
       $("#branchOne").show();
     }
     event.preventDefault();
   }); 
+
+  $("form#BranchOneDecision").submit(function(event) {
+    var decisionOne = $("#decisionOne").val();
+    console.log(decisionOne);
+    if (decisionOne === "C") {
+      $("#endingTwo").show();
+    } else if (decisionOne === "B"){
+      $("#branchTwo").show();
+    } else {
+      $("#branchTwo").show();
+    }
+    event.preventDefault();
+  }); 
+
 });
