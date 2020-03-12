@@ -6,11 +6,15 @@ $(document).ready(function() {
    $("#introCard").show();
    event.preventDefault();
  }); 
-});
 
-$(document).ready(function() {
   $("form#intro").submit(function(event) {
-    var decsionOne = 
-
+    var decsionIntro = $("#decisionIntro").val();
+    console.log(decsionIntro);
+    if (decisionOne === "B") {
+      $("#branchFour").show();
+    } else {
+      $("#branchOne").show();
+    }
+    event.preventDefault();
   }); 
 });
