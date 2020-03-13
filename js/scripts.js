@@ -8,11 +8,14 @@ $(document).ready(function() {
  }); 
 
   $("form#intro").submit(function(event) {
-    var decsionIntro = $("#decisionIntro").val();
-    console.log(decsionIntro);
+    var decisionIntro = $("#decisionIntro").val();
     if (decisionIntro === "B") {
-      $("#branchFour").show();
-    } else {
+      // $("#branchFour").show();
+    } else if (decisionIntro === "D") {
+      $("#endingOne").show();
+    }
+    else {
+      $("#endingOne").hide();
       $("#branchOne").show();
     }
     event.preventDefault();
@@ -20,12 +23,15 @@ $(document).ready(function() {
 
   $("form#BranchOneDecision").submit(function(event) {
     var decisionOne = $("#decisionOne").val();
-    console.log(decisionOne);
     if (decisionOne === "C") {
+      $("#endingOne").hide();
       $("#endingTwo").show();
+    } else if (decisionOne === "D"){
+      $("#endingTwo").hide();
+      $("#endingOne").show();
     } else if (decisionOne === "B"){
-      $("#branchTwo").show();
-    } else {
+      $("#endingTwo").hide();
+      $("#endingOne").hide();
       $("#branchTwo").show();
     }
     event.preventDefault();
