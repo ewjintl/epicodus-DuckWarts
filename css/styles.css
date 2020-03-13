@@ -57,7 +57,7 @@ img {
   margin-bottom: 10px;
 }
 
-#werewolf {
+.werewolf {
   filter: grayscale(100%);
 }
 #introCard,
@@ -68,4 +68,8 @@ img {
 #endingOne,
 #endingTwo {
   display: none;
+}
+
+footer {
+  text-align: center;
 }
