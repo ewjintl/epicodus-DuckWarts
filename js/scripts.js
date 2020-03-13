@@ -53,4 +53,20 @@ $(document).ready(function() {
     event.preventDefault();
   }); 
 
+  $("form#branchThreeDecision").submit(function(event) {
+    var decisionThree = $("#decisionThree").val();
+    if (decisionThree === "B") {
+      $("#endingOne").hide();
+      $("#endingTwo").show();
+    } else if (decisionTwo === "C"){
+      $("#endingOne").hide();
+      $("#endingTwo").show();
+    } else if (decisionTwo === "D"){
+      $("#endingTwo").hide();
+      $("#endingOne").hide();
+      $("#endingThree").show();
+    }
+    event.preventDefault();
+  }); 
+
 });
