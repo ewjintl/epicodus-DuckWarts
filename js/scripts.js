@@ -55,13 +55,11 @@ $(document).ready(function() {
 
   $("form#branchThreeDecision").submit(function(event) {
     var decisionThree = $("#decisionThree").val();
-    if (decisionThree === "B") {
+    if ((decisionThree === "B") || (decisionThree ===  "A")) {
       $("#endingOne").hide();
+      $("#endingThree").hide();
       $("#endingTwo").show();
-    } else if (decisionTwo === "C"){
-      $("#endingOne").hide();
-      $("#endingTwo").show();
-    } else if (decisionTwo === "D"){
+    } else if (decisionThree === "D"){
       $("#endingTwo").hide();
       $("#endingOne").hide();
       $("#endingThree").show();
