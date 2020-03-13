@@ -62,9 +62,10 @@ img {
 }
 #introCard,
 #branchOne,
-#endingTwo,
 #branchTwo,
 #branchThree,
-#branchFour {
+#branchFour,
+#endingOne,
+#endingTwo {
   display: none;
 }
