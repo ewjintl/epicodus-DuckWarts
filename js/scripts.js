@@ -10,7 +10,7 @@ $(document).ready(function() {
   $("form#intro").submit(function(event) {
     var decisionIntro = $("#decisionIntro").val();
     if (decisionIntro === "B") {
-      // $("#branchFour").show();
+      $("#branchTwo").show();
     } else if (decisionIntro === "D") {
       $("#endingOne").show();
     }
@@ -33,6 +33,38 @@ $(document).ready(function() {
       $("#endingTwo").hide();
       $("#endingOne").hide();
       $("#branchTwo").show();
+    }
+    event.preventDefault();
+  });
+
+  $("form#branchTwoDecision").submit(function(event) {
+    var decisionTwo = $("#decisionTwo").val();
+    if (decisionTwo === "B") {
+      $("#endingOne").hide();
+      $("#endingTwo").show();
+    } else if (decisionTwo === "C"){
+      $("#endingTwo").hide();
+      $("#endingOne").show();
+    } else if (decisionTwo === "D"){
+      $("#endingTwo").hide();
+      $("#endingOne").hide();
+      $("#branchThree").show();
+    }
+    event.preventDefault();
+  }); 
+
+  $("form#branchThreeDecision").submit(function(event) {
+    var decisionThree = $("#decisionThree").val();
+    if (decisionThree === "B") {
+      $("#endingOne").hide();
+      $("#endingTwo").show();
+    } else if (decisionTwo === "C"){
+      $("#endingOne").hide();
+      $("#endingTwo").show();
+    } else if (decisionTwo === "D"){
+      $("#endingTwo").hide();
+      $("#endingOne").hide();
+      $("#endingThree").show();
     }
     event.preventDefault();
   }); 
