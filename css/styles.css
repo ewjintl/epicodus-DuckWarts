@@ -57,7 +57,7 @@ img {
   margin-bottom: 10px;
 }
 
-#werewolf {
+.werewolf {
   filter: grayscale(100%);
 }
 #introCard,
